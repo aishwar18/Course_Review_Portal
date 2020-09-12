@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Review Portal</title>
+    <link rel="icon" type="image/jpg" href="../images/crp_logo.jpg">
+      
+
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+      
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+      
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+      
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+      
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+      
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/04a54148ef.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/elective.css" />
+      
+    <!--JS-->
+    <script src="../js/select_elective.js"></script>
+    <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../css/table_util.css">
+    <link rel="stylesheet" type="text/css" href="../css/table_main.css">
+
+
+    
+    <script>
+      function direct_elective() {
+        window.open("elective.html#pr","_self");
+      }
+      </script>  
+
+<script>
+  function direct_elective_1() {
+    window.open("elective.html#pq","_self");
+  }
+  </script> 
+      
+  </head>
+    
+    
+  <body>
+      <div class="container-fluid">
+      <!-- Nav Bar -->
+
+      <navbar class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand nav-bar-text" href="#" text allign="center" style="font-size:25px;">Elective</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#ci" style="font-size:18px;color:white;">Course Insights&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#co" style="font-size:18px;color:white;">Course Outcome&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#sy" style="font-size:18px;color:white;">Syllabus&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#ec" style="font-size:18px;color:white;">Evaluation Criteria&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#hf" style="font-size:18px;color:white;">Handling Faculties&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#af" style="font-size:18px;color:white;">Alumini Feedback&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#sr" style="font-size:18px;color:white;">Review&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#pr" style="font-size:18px;color:white;">Post Review&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#df" style="font-size:18px;color:white;">FAQ&nbsp;&nbsp;</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-bar-text" href="#pq" style="font-size:18px;color:white;">Post question&nbsp;&nbsp;</a>
+            </li>
+            </ul>
+        </div>
+      </navbar>
+    </div>
+
+    <section id="ci" style=background-color:#c9e783;>
+      <div class="row" style=padding-top:200px;>
+        <div class="column">
+          <div class="container">
+            <img src="../images/objectives.jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text">Course Objectives</div>
+            </div>
+          </div>
+        </div>
+       <div class="column">
+        <div class="container">
+          <img src="../images/prereq.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Pre-requisites</div>
+          </div>
+        </div>
+        </div>
+       <div class="column">
+        <div class="container">
+          <img src="../images/books.jpg" alt="Avatar" class="image">
+          <div class="overlay">
+            <div class="text">Reference books</div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+      
+      <br><br><br><br><br><br>
+  </section>   
+
+    <section id="co">    
+      <div class="limiter">
+        <div class="container-table100">
+          <div class="wrap-table100">
+            <div class="table100 ver1">
+              <div class="table100-firstcol">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="cell100 column1">CO's</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">CO1</td>
+                    </tr>
+
+                    <tr class="row100 body">
+                      <td class="cell100 column1">CO2</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">CO3</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">CO4</td>
+                    </tr>
+                        
+                    <tr class="row100 body">
+                      <td class="cell100 column1">CO5</td>
+                    </tr>
+
+
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="wrap-table100-nextcols js-pscroll">
+                <div class="table100-nextcols">
+                  <table>
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="cell100 column2">Course Outcome</th>
+                        <th class="cell100 column3">Bloom's Taxonomy Level</th>
+                        <th class="cell100 column4">No. of hours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Understand</td>
+                        <td class="cell100 column3">L2</td>
+                        <td class="cell100 column4">6</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Formulate</td>
+                        <td class="cell100 column3">L3</td>
+                        <td class="cell100 column4">22</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Design</td>
+                        <td class="cell100 column3">L4</td>
+                        <td class="cell100 column4">9</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Design and build</td>
+                        <td class="cell100 column3">L4</td>
+                        <td class="cell100 column4">9</td>
+                      </tr>
+
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Apply</td>
+                        <td class="cell100 column3">L3</td>
+                        <td class="cell100 column4">14</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+    <section id="sy">
+      <div class="limiter">
+        <div class="container-table100">
+          <div class="wrap-table100">
+            <div class="table100 ver1">
+              <div class="table100-firstcol">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="cell100 column1">Unit Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Unit 1</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Unit 2</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Unit 3</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="wrap-table100-nextcols js-pscroll">
+                <div class="table100-nextcols">
+                  <table>
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="cell100 column2">Part 1 syllabus</th>
+                        <th class="cell100 column23">Part 2 syllabus</th>
+                        <th class="cell100 column4">Part 3 syllabus</th>
+                        <th class="cell100 column5">No. of hours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Unit 1 : Part 1</td>
+                        <td class="cell100 column23">Unit 2 : Part 1</td>
+                        <td class="cell100 column4">Unit 3 : Part 1</td>
+                        <td class="cell100 column5">18</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Unit 1 : Part 2</td>
+                        <td class="cell100 column23">Unit 2 : Part 2</td>
+                        <td class="cell100 column4">Unit 3 : Part 2</td>
+                        <td class="cell100 column5">20</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Unit 1 : Part 3</td>
+                        <td class="cell100 column23">Unit 2 : Part 3</td>
+                        <td class="cell100 column4">Unit 3 : Part 3</td>
+                        <td class="cell100 column5">22</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ec">
+      <div class="limiter">
+        <div class="container-table100">
+          <div class="wrap-table100">
+            <div class="table100 ver1">
+              <div class="table100-firstcol">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="cell100 column1">Assessment Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Internal</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1"></td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1"></td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">External</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1"></td>
+                    </tr>
+    
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="wrap-table100-nextcols js-pscroll">
+                <div class="table100-nextcols">
+                  <table>
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="cell100 column2">Component</th>
+                        <th class="cell100 column3">Count</th>
+                        <th class="cell100 column4">Contribution</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Quiz, Homework</td>
+                        <td class="cell100 column3">10</td>
+                        <td class="cell100 column4">20%</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Lab evaluations</td>
+                        <td class="cell100 column3">5</td>
+                        <td class="cell100 column4">30%</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Project</td>
+                        <td class="cell100 column3">2</td>
+                        <td class="cell100 column4">30%</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Final quiz</td>
+                        <td class="cell100 column3">1</td>
+                        <td class="cell100 column4">15%</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Viva</td>
+                        <td class="cell100 column3">1</td>
+                        <td class="cell100 column4">15%</td>
+                      </tr>
+    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+
+
+    <section id="hf">
+      <div class="limiter">
+        <div class="container-table100">
+          <div class="wrap-table100">
+            <div class="table100 ver1">
+              <div class="table100-firstcol">
+                <table>
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="cell100 column1">Handling Faculties</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Teacher 1</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Teacher 2</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Teacher 3</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Teacher 4</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                      <td class="cell100 column1">Teacher 5</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="wrap-table100-nextcols js-pscroll">
+                <div class="table100-nextcols">
+                  <table>
+                    <thead>
+                      <tr class="row100 head">
+                        <th class="cell100 column2">Position</th>
+                        <th class="cell100 column23">Qualification</th>
+                        <th class="cell100 column4">Experience (in years)</th>
+                        <th class="cell100 column5">Contacts</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Professor</td>
+                        <td class="cell100 column23">M.Tech (Branch), B.Tech (Branch)</td>
+                        <td class="cell100 column4">12</td>
+                        <td class="cell100 column5">teacher1@college.edu</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Associate Professor</td>
+                        <td class="cell100 column23">M.Tech (Branch), B.Tech (Branch)</td>
+                        <td class="cell100 column4">8</td>
+                        <td class="cell100 column5">teacher2@college.edu</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Asst Professor</td>
+                        <td class="cell100 column23">B.Tech (Branch)</td>
+                        <td class="cell100 column4">3</td>
+                        <td class="cell100 column5">teacher3@college.edu</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Asst Professor</td>
+                        <td class="cell100 column23">B.Tech (Branch)</td>
+                        <td class="cell100 column4">2</td>
+                        <td class="cell100 column5">teacher4@college.edu</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Associate Professor</td>
+                        <td class="cell100 column23">B.Tech (Branch)</td>
+                        <td class="cell100 column4">6</td>
+                        <td class="cell100 column5">teacher5@college.edu</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br><br> 
+    </section>
+
+
+
+
+
+    <section id="af">
+      <div class="container" style="padding-top:100px;width:1000px;height:700px">
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel" data-interval="25000" >
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel1" data-slide-to="1"></li>
+            <li data-target="#myCarousel1" data-slide-to="2"></li>
+            <li data-target="#myCarousel1" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active" >
+                  <div id="about_content1" style="background-image: linear-gradient(-90deg,#06beb6, #48b1bf)">
+                    <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                      <b><i>Name : Name 1 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Company : Company 1 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : Date 1<br>Experience in this job : 1 years  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                      Year of passing : year 1<br>Feedback (Use of elective in interview and job) :</i></b></p>
+                      <br><br><br><br><br>
+                  </div> 
+              </div>
+              
+              <div class="item">
+                  <div id="about_content1" style="background-image: linear-gradient(-90deg,#06beb6, #48b1bf)">
+                    <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                      <b><i>Name : Name 2 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Company : Company 2 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : Date 2<br>Experience in this job : 2 years  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                      Year of passing : year 2<br>Feedback (Use of elective in interview and job) :</i></b></p>
+                      <br><br><br><br><br>
+                  </div> 
+              </div>
+              <div class="item">
+                  <div id="about_content1" style="background-image: linear-gradient(-90deg,#06beb6, #48b1bf)">
+                    <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                      <b><i>Name : Name 3 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Company : Company 3 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : Date 3<br>Experience in this job : 3 yaers  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                      Year of passing : year 3<br>Feedback (Use of elective in interview and job) :</i></b></p>
+                      <br><br><br><br><br>
+                  </div> 
+              </div>
+              <div class="item">
+              <div id="about_content1" style="background-image: linear-gradient(-90deg,#06beb6, #48b1bf)">
+                <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                  <b><i>Name : Name 4 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                         Company : Company 4 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                              Date : Date 4<br>Experience in this job : 4 years  &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Year of passing : year 4<br>Feedback (Use of elective in interview and job) :</i></b></p>
+                  <br><br><br><br><br>
+              </div> 
+              </div>  
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
+    </section>
+
+    <section id="sr">
+      <div class="container" style="padding-top:100px;width:1000px;height:700px">
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="25000" >
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel2" data-slide-to="1"></li>
+            <li data-target="#myCarousel2" data-slide-to="2"></li>
+            <li data-target="#myCarousel2" data-slide-to="3"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active" >
+                  <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
+                    <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                      <b><i>Name : Name 1 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Year of Study : Year 1 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : Date 1<br>Course Review : </i></b></p>
+                      <br><br><br><br><br>
+                  </div> 
+              </div>
+              
+              <div class="item">
+                  <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
+                    <p id=p1  style="color:white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                      <b><i>Name : Name 2 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Year of Study : Year 2 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : Date 2<br>Course Review : </i></b></p>
+                      <br><br><br><br><br>
+                  </div> 
+              </div>
+              <div class="item">
+                  <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
+                    <p id=p1  style="color:white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                      <b><i>Name : Name 3 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Year of Study : Year 3 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : Date 3<br>Course Review : </i></b></p>
+                      <br><br><br><br><br>
+                  </div> 
+              </div>
+              <div class="item">
+              <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
+                <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
+                  <b><i>Name : Name 4 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                         Year of Study : Year 4 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                              Date : Date 4<br>Course Review : </i></b></p>
+                  <br><br><br><br><br>
+              </div> 
+              </div>  
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <br><br><br><br><br><br> <br>
+      <br><br><br><br><br><br><br>     
+    </section>
+
+    <section id="pr">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-lg-12">
+            <div class="reg-box" id="reg-box">
+              <div class="reg-form" id="reg-form">
+                <img style="padding-right:35px;" src="../images/feedback.jpg" width="300px" height="200px"><br>
+                <h3 style="padding-left:40px;">Post your review about the course</h3><br>
+                <form style="padding-right:20px;">
+                    <div class="form-group" >
+                      <label for="rv"></label><br>
+                      <textarea rows="20" cols="68" name="rv" form="usrform" ></textarea>
+                  </div>
+
+                  <span  class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                  
+                    <div id=1 style="padding-left:130px;" >            
+                  <button  style="padding-left:30px;padding-right:30px;" onclick="direct_elective()" type="button" class="btn btn-primary">Post</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br><br> 
+    </section> 
+   
+
+      <section id="df">
+        <div class="container">
+          <br />
+          <br />
+          <br />
+          <br />
+      
+          <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co1">Q1?</a>
+                      </h4>
+                  </div>
+                  <div id="co1" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        Answer1
+                      </div>
+                  </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co2">Q2?</a>
+                    </h4>
+                </div>
+                <div id="co2" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      Answer2
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                  <h4 class="panel-title">
+                      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co3">Q3?</a>
+                  </h4>
+              </div>
+              <div id="co3" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    Answer3
+                  </div>
+              </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co4">Q4?</a>
+                </h4>
+            </div>
+            <div id="co4" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Answer4
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 class="panel-title">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co5">Q5?</a>
+              </h4>
+          </div>
+          <div id="co5" class="panel-collapse collapse in">
+              <div class="panel-body">
+                Answer5
+              </div>
+          </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co6">Q6?</a>
+            </h4>
+        </div>
+        <div id="co6" class="panel-collapse collapse in">
+            <div class="panel-body">
+              Answer6
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <h4 class="panel-title">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co7">Q7?</a>
+          </h4>
+      </div>
+      <div id="co7" class="panel-collapse collapse in">
+          <div class="panel-body">
+            Answer7
+          </div>
+      </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co8">Q8?</a>
+        </h4>
+    </div>
+    <div id="co8" class="panel-collapse collapse in">
+        <div class="panel-body">
+          Answer8
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h4 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co9">Q9?</a>
+      </h4>
+  </div>
+  <div id="co9" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Answer9
+      </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h4 class="panel-title">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co10">Q10?</a>
+      </h4>
+  </div>
+  <div id="co10" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Answer10
+      </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+      <br><br><br><br>
+      <br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br> 
+      <br><br><br><br><br><br><br> 
+      </section>
+
+    
+      
+    <section id="pq">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-lg-12">
+            <div class="reg-box" id="reg-box">
+              <div class="reg-form" id="reg-form">
+                <img style="padding-right:35px;" src="../images/qn.gif" width="300px" height="200px"><br>
+                <h3 style="padding-left:40px;">Post your doubts about the course</h3><br>
+                <form style="padding-right:20px;">
+                    <div class="form-group" >
+                      <label for="qn"></label><br>
+                      <textarea rows="20" cols="68" name="qn" form="usrform" ></textarea>
+                  </div>
+                  
+                    <div id=1 style="padding-left:130px;" >            
+                  <button  style="padding-left:30px;padding-right:30px;" onclick="direct_elective_1()" type="button" class="btn btn-primary">Post</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </section> 
+
+  <!--===============================================================================================-->	
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="../vendor/bootstrap/js/popper.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="../vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="../vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script>
+      $('.js-pscroll').each(function(){
+        var ps = new PerfectScrollbar(this);
+  
+        $(window).on('resize', function(){
+          ps.update();
+        })
+  
+        $(this).on('ps-x-reach-start', function(){
+          $(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+        });
+  
+        $(this).on('ps-scroll-x', function(){
+          $(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+        });
+  
+      });
+  
+      
+      
+      
+    </script>
+  <!--===============================================================================================-->
+    <script src="../js/table_main.js"></script>
+  </body>
+</html>
