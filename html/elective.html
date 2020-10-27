@@ -101,12 +101,28 @@
     
     <script>
       function direct_elective() {
+        var txt;
+  if (confirm("Do you want to post a feedback?")) {
+    txt = "Succesfully submitted!";
+  } else {
+    txt = "    Try again!";
+  }
+  document.getElementById('id1').value = '';
+  document.getElementById("demo").innerHTML = txt;
         window.open("elective.html#pr","_self");
       }
       </script>  
 
 <script>
   function direct_elective_1() {
+    var txt;
+  if (confirm("Do you want to post a questtion?")) {
+    txt = "Succesfully submitted!";
+  } else {
+    txt = "    Try again!";
+  }
+  document.getElementById('id2').value = '';
+  document.getElementById("demo1").innerHTML = txt;
     window.open("elective.html#pq","_self");
   }
   </script> 
@@ -175,7 +191,7 @@
           <div class="container">
             <img src="../images/objectives.jpg" alt="Avatar" class="image">
             <div class="overlay">
-              <div class="text">Course Objectives</div>
+              <div class="text">Course Objectives:<br>Android Application Development<br>credits: 3</div>
             </div>
           </div>
         </div>
@@ -183,7 +199,7 @@
         <div class="container">
           <img src="../images/prereq.jpg" alt="Avatar" class="image">
           <div class="overlay">
-            <div class="text">Pre-requisites</div>
+            <div class="text">Pre-requisites:<br>Not required</div>
           </div>
         </div>
         </div>
@@ -191,7 +207,7 @@
         <div class="container">
           <img src="../images/books.jpg" alt="Avatar" class="image">
           <div class="overlay">
-            <div class="text">Reference books</div>
+            <div class="text">Reference books:<br>Android programming: The Big Nerd Ranch Guide</div>
           </div>
         </div>
     </div>
@@ -215,23 +231,23 @@
                   </thead>
                   <tbody>
                     <tr class="row100 body">
-                      <td class="cell100 column1">CO1</td>
+                      <td class="cell100 column1">CO1<br><br></td>
                     </tr>
 
                     <tr class="row100 body">
-                      <td class="cell100 column1">CO2</td>
+                      <td class="cell100 column1">CO2<br><br></td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">CO3</td>
+                      <td class="cell100 column1">CO3<br><br></td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">CO4</td>
+                      <td class="cell100 column1">CO4<br><br></td>
                     </tr>
                         
                     <tr class="row100 body">
-                      <td class="cell100 column1">CO5</td>
+                      <td class="cell100 column1">CO5<br><br></td>
                     </tr>
 
 
@@ -251,31 +267,37 @@
                     </thead>
                     <tbody>
                       <tr class="row100 body">
-                        <td class="cell100 column2">Understand</td>
+                        <td class="cell100 column2">
+                          Understand the fundamental concepts of android operating system and android application development.
+                          </td>
                         <td class="cell100 column3">L2</td>
                         <td class="cell100 column4">6</td>
                       </tr>
     
                       <tr class="row100 body">
-                        <td class="cell100 column2">Formulate</td>
+                        <td class="cell100 column2">
+                          Understand the fundamental concepts of android operating system and android application development.
+                          </td>
+                        <td class="cell100 column3">L2</td>
+                        <td class="cell100 column4">5</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Design android specific user interface (UI) </td>
                         <td class="cell100 column3">L3</td>
-                        <td class="cell100 column4">22</td>
+                        <td class="cell100 column4">19</td>
                       </tr>
     
                       <tr class="row100 body">
-                        <td class="cell100 column2">Design</td>
-                        <td class="cell100 column3">L4</td>
-                        <td class="cell100 column4">9</td>
-                      </tr>
-    
-                      <tr class="row100 body">
-                        <td class="cell100 column2">Design and build</td>
+                        <td class="cell100 column2">Design and develop applications using android services and sensors</td>
                         <td class="cell100 column3">L4</td>
                         <td class="cell100 column4">9</td>
                       </tr>
 
                       <tr class="row100 body">
-                        <td class="cell100 column2">Apply</td>
+                        <td class="cell100 column2">
+                          Understand and apply data storage and sharing techniques for  applications.
+                          </td>
                         <td class="cell100 column3">L3</td>
                         <td class="cell100 column4">14</td>
                       </tr>
@@ -304,15 +326,15 @@
                   </thead>
                   <tbody>
                     <tr class="row100 body">
-                      <td class="cell100 column1">Unit 1</td>
+                      <td class="cell100 column1">Unit 1<br><br><br><br><br><br></td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">Unit 2</td>
+                      <td class="cell100 column1">Unit 2<br><br><br><br><br><br><br><br></td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">Unit 3</td>
+                      <td class="cell100 column1">Unit 3<br><br><br><br><br><br></td>
                     </tr>
 
                   </tbody>
@@ -332,24 +354,24 @@
                     </thead>
                     <tbody>
                       <tr class="row100 body">
-                        <td class="cell100 column2">Unit 1 : Part 1</td>
-                        <td class="cell100 column23">Unit 2 : Part 1</td>
-                        <td class="cell100 column4">Unit 3 : Part 1</td>
+                        <td class="cell100 column2">Basics of Android - Java Basics, Object Oriented Programming, Android architecture,First application</td>
+                        <td class="cell100 column23">APIs and Devices communication - Location Based Services and Google Maps, Sensors</td>
+                        <td class="cell100 column4">Expert Android Apps Development, mobile applications - Understand the app idea and design user interface/wireframes of mobile application</td>
                         <td class="cell100 column5">18</td>
                       </tr>
     
                       <tr class="row100 body">
-                        <td class="cell100 column2">Unit 1 : Part 2</td>
-                        <td class="cell100 column23">Unit 2 : Part 2</td>
-                        <td class="cell100 column4">Unit 3 : Part 2</td>
+                        <td class="cell100 column2">Basic UI design - Advanced UI - Selection components -Notifications, Activity and Fragment, Fragment Lifecycle</td>
+                        <td class="cell100 column23">Motion sensors, Environmental, Position sensors, External APIs</td>
+                        <td class="cell100 column4"> Set up of mobile app development environment - Developing and debugging mobile app components – User interface, services, notifications, broadcast receivers, data components</td>
                         <td class="cell100 column5">20</td>
                       </tr>
     
                       <tr class="row100 body">
-                        <td class="cell100 column2">Unit 1 : Part 3</td>
-                        <td class="cell100 column23">Unit 2 : Part 3</td>
-                        <td class="cell100 column4">Unit 3 : Part 3</td>
-                        <td class="cell100 column5">22</td>
+                        <td class="cell100 column2"> Intents, Navigation Drawer, Data storage, Services, Web Services and WebView.                        </td>
+                        <td class="cell100 column23">Apps with Connectivity and the Cloud, Telephony Services, Google play and Services</td>
+                        <td class="cell100 column4">Using an emulator to deploy and run mobile apps. Testing mobile app - unit testing, black box testing and test automation</td>
+                        <td class="cell100 column5">16</td>
                       </tr>
 
                     </tbody>
@@ -380,11 +402,11 @@
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1"></td>
+                      <td class="cell100 column1"><br></td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1"></td>
+                      <td class="cell100 column1"><br></td>
                     </tr>
     
                     <tr class="row100 body">
@@ -392,7 +414,7 @@
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1"></td>
+                      <td class="cell100 column1"><br></td>
                     </tr>
     
                   </tbody>
@@ -411,33 +433,33 @@
                     </thead>
                     <tbody>
                       <tr class="row100 body">
-                        <td class="cell100 column2">Quiz, Homework</td>
-                        <td class="cell100 column3">10</td>
-                        <td class="cell100 column4">20%</td>
-                      </tr>
-    
-                      <tr class="row100 body">
-                        <td class="cell100 column2">Lab evaluations</td>
-                        <td class="cell100 column3">5</td>
-                        <td class="cell100 column4">30%</td>
-                      </tr>
-    
-                      <tr class="row100 body">
-                        <td class="cell100 column2">Project</td>
-                        <td class="cell100 column3">2</td>
-                        <td class="cell100 column4">30%</td>
-                      </tr>
-    
-                      <tr class="row100 body">
-                        <td class="cell100 column2">Final quiz</td>
+                        <td class="cell100 column2">Periodical1</td>
                         <td class="cell100 column3">1</td>
                         <td class="cell100 column4">15%</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Periodical2</td>
+                        <td class="cell100 column3">1</td>
+                        <td class="cell100 column4">15%</td>
+                      </tr>
+
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Quiz</td>
+                        <td class="cell100 column3">5</td>
+                        <td class="cell100 column4">20%</td>
                       </tr>
     
                       <tr class="row100 body">
                         <td class="cell100 column2">Viva</td>
                         <td class="cell100 column3">1</td>
-                        <td class="cell100 column4">15%</td>
+                        <td class="cell100 column4">20%</td>
+                      </tr>
+    
+                      <tr class="row100 body">
+                        <td class="cell100 column2">Endsem</td>
+                        <td class="cell100 column3">1</td>
+                        <td class="cell100 column4">30%</td>
                       </tr>
     
                     </tbody>
@@ -465,23 +487,23 @@
                   </thead>
                   <tbody>
                     <tr class="row100 body">
-                      <td class="cell100 column1">Teacher 1</td>
+                      <td class="cell100 column1">Jevitha K P</td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">Teacher 2</td>
+                      <td class="cell100 column1">Radhika G</td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">Teacher 3</td>
+                      <td class="cell100 column1">Malathy</td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">Teacher 4</td>
+                      <td class="cell100 column1"></td>
                     </tr>
     
                     <tr class="row100 body">
-                      <td class="cell100 column1">Teacher 5</td>
+                      <td class="cell100 column1"></td>
                     </tr>
 
                   </tbody>
@@ -501,38 +523,38 @@
                     </thead>
                     <tbody>
                       <tr class="row100 body">
-                        <td class="cell100 column2">Professor</td>
-                        <td class="cell100 column23">M.Tech (Branch), B.Tech (Branch)</td>
-                        <td class="cell100 column4">12</td>
-                        <td class="cell100 column5">teacher1@college.edu</td>
+                        <td class="cell100 column2">Associate Professor</td>
+                        <td class="cell100 column23">M.Tech</td>
+                        <td class="cell100 column4">5</td>
+                        <td class="cell100 column5">jevitha@gmail.com</td>
                       </tr>
     
                       <tr class="row100 body">
                         <td class="cell100 column2">Associate Professor</td>
-                        <td class="cell100 column23">M.Tech (Branch), B.Tech (Branch)</td>
-                        <td class="cell100 column4">8</td>
-                        <td class="cell100 column5">teacher2@college.edu</td>
+                        <td class="cell100 column23">M.Tech (CSE)</td>
+                        <td class="cell100 column4">5</td>
+                        <td class="cell100 column5">radhika@gmail.com</td>
                       </tr>
     
                       <tr class="row100 body">
                         <td class="cell100 column2">Asst Professor</td>
-                        <td class="cell100 column23">B.Tech (Branch)</td>
+                        <td class="cell100 column23">B.Tech</td>
                         <td class="cell100 column4">3</td>
-                        <td class="cell100 column5">teacher3@college.edu</td>
+                        <td class="cell100 column5">malathy@gmail.com</td>
                       </tr>
     
                       <tr class="row100 body">
-                        <td class="cell100 column2">Asst Professor</td>
-                        <td class="cell100 column23">B.Tech (Branch)</td>
-                        <td class="cell100 column4">2</td>
-                        <td class="cell100 column5">teacher4@college.edu</td>
+                        <td class="cell100 column2"></td>
+                        <td class="cell100 column23"></td>
+                        <td class="cell100 column4"></td>
+                        <td class="cell100 column5"></td>
                       </tr>
     
                       <tr class="row100 body">
-                        <td class="cell100 column2">Associate Professor</td>
-                        <td class="cell100 column23">B.Tech (Branch)</td>
-                        <td class="cell100 column4">6</td>
-                        <td class="cell100 column5">teacher5@college.edu</td>
+                        <td class="cell100 column2"></td>
+                        <td class="cell100 column23"></td>
+                        <td class="cell100 column4"></td>
+                        <td class="cell100 column5"></td>
                       </tr>
 
                     </tbody>
@@ -566,10 +588,10 @@
               <div class="item active" >
                   <div id="about_content1" style="background-image: linear-gradient(-90deg,#06beb6, #48b1bf)">
                     <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
-                      <b><i>Name : Name 1 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                             Company : Company 1 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                                  Date : Date 1<br>Experience in this job : 1 years  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                                      Year of passing : year 1<br>Feedback (Use of elective in interview and job) :</i></b></p>
+                      <b><i>Name : William &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Company : Microsoft&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : 07/10/2020<br>Experience in this job : 1 year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                      Year of passing : 2018<br>Feedback :<br>As a software engineer android helped me a lot</i></b></p>
                       <br><br><br><br><br>
                   </div> 
               </div>
@@ -634,9 +656,9 @@
               <div class="item active" >
                   <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
                     <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
-                      <b><i>Name : Name 1 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                             Year of Study : Year 1 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                                  Date : Date 1<br>Course Review : </i></b></p>
+                      <b><i>Name : Sandhya S &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                             Semester : sem 5 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                  Date : 06/10/2020 <br>Course Review : <br> The faculty taught well and explained the concepts well<br>Rating: 5</i></b></p>
                       <br><br><br><br><br>
                   </div> 
               </div>
@@ -645,7 +667,7 @@
                   <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
                     <p id=p1  style="color:white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
                       <b><i>Name : Name 2 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                             Year of Study : Year 2 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                             Semester : sem 2 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                                   Date : Date 2<br>Course Review : </i></b></p>
                       <br><br><br><br><br>
                   </div> 
@@ -654,7 +676,7 @@
                   <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
                     <p id=p1  style="color:white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
                       <b><i>Name : Name 3 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                             Year of Study : Year 3 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                             Semester : sem 3 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                                   Date : Date 3<br>Course Review : </i></b></p>
                       <br><br><br><br><br>
                   </div> 
@@ -663,7 +685,7 @@
               <div id="about_content1" style="background-image: linear-gradient(-90deg,#FF7F50, #FFA500)">
                 <p id=p1  style="color: white; font-family: 'Trocchi', serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;padding-left:10px;">
                   <b><i>Name : Name 4 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                         Year of Study : Year 4 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        Semester : sem 4 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                               Date : Date 4<br>Course Review : </i></b></p>
                   <br><br><br><br><br>
               </div> 
@@ -695,7 +717,7 @@
                 <form style="padding-right:20px;">
                     <div class="form-group" >
                       <label for="rv"></label><br>
-                      <textarea rows="20" cols="68" name="rv" form="usrform" ></textarea>
+                      <textarea rows="20" cols="68" name="rv" id="id1" form="usrform" ></textarea>
                   </div>
 
                   <span  class="fa fa-star checked"></span>
@@ -706,7 +728,8 @@
                   
                     <div id=1 style="padding-left:130px;" >            
                   <button  style="padding-left:30px;padding-right:30px;" onclick="direct_elective()" type="button" class="btn btn-primary">Post</button>
-                    </div>
+                  <p id="demo"><br></p>    
+                </div>
                 </form>
               </div>
             </div>
@@ -733,12 +756,12 @@
               <div class="panel panel-default">
                   <div class="panel-heading">
                       <h4 class="panel-title">
-                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co1">Q1?</a>
+                          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#co1">Q1</a>
                       </h4>
                   </div>
                   <div id="co1" class="panel-collapse collapse in">
                       <div class="panel-body">
-                        Answer1
+                        
                       </div>
                   </div>
               </div>
@@ -872,12 +895,13 @@
                 <form style="padding-right:20px;">
                     <div class="form-group" >
                       <label for="qn"></label><br>
-                      <textarea rows="20" cols="68" name="qn" form="usrform" ></textarea>
+                      <textarea rows="20" cols="68" name="qn" form="usrform" id="id2"></textarea>
                   </div>
                   
                     <div id=1 style="padding-left:130px;" >            
                   <button  style="padding-left:30px;padding-right:30px;" onclick="direct_elective_1()" type="button" class="btn btn-primary">Post</button>
-                    </div>
+                  <p id="demo1"><br></p>      
+                </div>
                 </form>
               </div>
             </div>

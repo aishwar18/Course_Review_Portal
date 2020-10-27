@@ -1,29 +1,27 @@
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
 
 @font-face {
   font-family: Roboto-Regular;
-  src: url('../fonts/roboto/Roboto-Regular.ttf'); 
+  src: url('../fonts/roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
   font-family: Roboto-Medium;
-  src: url('../fonts/roboto/Roboto-Medium.ttf'); 
+  src: url('../fonts/roboto/Roboto-Medium.ttf');
 }
 
 @font-face {
   font-family: Roboto-Bold;
-  src: url('../fonts/roboto/Roboto-Bold.ttf'); 
+  src: url('../fonts/roboto/Roboto-Bold.ttf');
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -190,8 +188,8 @@ th, td {
 }
 
 .column2 {
-  width: 325px;
-  padding-left: 55px;
+  width: 375px;
+  padding-left: 15px;
 }
 
 .column3 {
@@ -305,6 +303,3 @@ th, td {
 .table100.ver1 tr {
   border-bottom: 1px solid #f2f2f2;
 }
-
-
-

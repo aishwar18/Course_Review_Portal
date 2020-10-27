@@ -94,20 +94,22 @@
 
         <img src="../images/login_logo.png" class="logo" alt="Logo" >
 
+        <a href="..\admin login\login.html" class="Admin">Admin</a>
 
-        <form class="form-signin  logDet">
+        <form class="form-signin  logDet" action="r.html" method="post" onsubmit="return login()">
 
           <h4 class="welCard"><span class="wel">Welcome back to </span><a href="" class="newAcc">Course Review</a></h4>
 
           <h1>Login</h1>
 
-          <div class="form-label-group  uid login">
+          <div class="form-label-group  uid login" >
             <input type="Username" id="inputUid" class="form-control" placeholder="Username" required autofocus>
+            <div id="uid_error">Please Enter a valid Username</div>
           </div>
 
           <div class="form-label-group password login">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+            <div id="pass_error">Please Enter a Valid Password</div>
           </div>
 
           <div class="row">
@@ -119,15 +121,15 @@
 
 
             <div class="col-lg-6 col-md-6 col-sm-6 mb-3" style="padding-left: 55px ">
-              <a href="" id="fpass"> Forgot Password?</a>
+              <a href="f.html" id="fpass"> Forgot Password?</a>
             </div>
 
           </div>
 
-          <button class="btn btn-lg btn-warning btn-block  btnSignin" type="submit">Sign in</button>
+          <button class="btn btn-lg btn-warning btn-block  btnSignin" type="submit" >Sign in</button>
 
           <p class="newAccount">
-           Want a new account? <a href="" class="newAcc">GET STARTED</a>
+           Want a new account? <a href="" class="newAcc" onclick="getStarted();">GET STARTED</a>
           </p>
         </form>
 
@@ -140,7 +142,7 @@
 
 
   </div>
-
+  <script src="js\loginPage.js" charset="utf-8"></script>
 </body>
 
 </html>
