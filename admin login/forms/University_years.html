@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>University_Department</title>
 
-    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/styles2.css">
 
 
     <!--Bootstrap-->
@@ -40,10 +40,7 @@
 
 
 
-        <div class="inputDeg">
-          <input type="text" name="" required=""  />
-          <label for="Dept_name">Department Name</label>
-        </div>
+
 
         <div class="inputDeg">
           <select id="DegBM">
@@ -52,6 +49,11 @@
             <option value="MTech">M.Tech</option>
           </select>
           <label for="Degreename">Degree Name</label>
+        </div>
+
+        <div class="inputDeg" >
+          <input type="text" name="" required="" id="Degree"  />
+          <label for="Dept_name">No. of years</label>
         </div>
 
         <button type="button" class="btn btn-light myBtn" id="insert" >Insert</button>
@@ -67,7 +69,7 @@
         document.getElementById('delete').setAttribute('disabled','disabled');
         document.getElementById('update').setAttribute('disabled','disabled');
         document.getElementById('DegBM').selectedIndex=-1;
-        document.getElementById('DegBM').setAttribute('disabled','disabled');
+        document.getElementById('Degree').setAttribute('disabled','disabled');
 
     </script>
     <script type="text/javascript">
@@ -81,7 +83,7 @@
           document.getElementById('delete').setAttribute('disabled','disabled');
           document.getElementById('update').setAttribute('disabled','disabled');
           document.getElementById('DegBM').selectedIndex=-1;
-          document.getElementById('DegBM').removeAttribute('disabled');
+          document.getElementById('Degree').removeAttribute('disabled');
         }
         else if(selectedValue=="Update")
         {
@@ -89,7 +91,7 @@
           document.getElementById('delete').setAttribute('disabled','disabled');
           document.getElementById('update').removeAttribute('disabled');
           document.getElementById('DegBM').selectedIndex=-1;
-          document.getElementById('DegBM').removeAttribute('disabled');
+          document.getElementById('Degree').removeAttribute('disabled');
         }
         else if(selectedValue=="Delete")
         {
@@ -97,14 +99,14 @@
           document.getElementById('update').setAttribute('disabled','disabled');
           document.getElementById('delete').removeAttribute('disabled');
           document.getElementById('DegBM').selectedIndex=-1;
-          document.getElementById('DegBM').setAttribute('disabled','disabled');
+          document.getElementById('Degree').setAttribute('disabled','disabled');
         }
         else{
           document.getElementById('insert').setAttribute('disabled','disabled');
           document.getElementById('update').setAttribute('disabled','disabled');
           document.getElementById('delete').setAttribute('disabled','disabled');
           document.getElementById('DegBM').selectedIndex=-1;
-          document.getElementById('DegBM').setAttribute('disabled','disabled');
+          document.getElementById('Degree').setAttribute('disabled','disabled');
         }
       }
     </script>
