@@ -65,3 +65,79 @@ function print_elective(ele_id, ele_index){
 	}
 }
 
+function makeBold() {
+	document.execCommand( "bold" );
+	if ( document.getElementById( "bold" ).isToggled ) {
+	  document.getElementById( "bold" ).style.backgroundColor = "#00cc55";
+	  document.getElementById( "bold" ).isToggled = false;
+	} else {
+	  document.getElementById( "bold" ).style.backgroundColor = "#008833";
+	  document.getElementById( "bold" ).isToggled = true;
+	}
+  }
+  
+  function makeItalic() {
+	document.execCommand( "italic" );
+	 if ( document.getElementById( "italic" ).isToggled ) {
+	  document.getElementById( "italic" ).style.backgroundColor = "#00cc55";
+	  document.getElementById( "italic" ).isToggled = false;
+	} else {
+	  document.getElementById( "italic" ).style.backgroundColor = "#008833";
+	  document.getElementById( "italic" ).isToggled = true;
+	}
+  }
+  
+  function doUnderline() {
+	document.execCommand( "underline" );
+	 if ( document.getElementById( "underline" ).isToggled ) {
+	  document.getElementById( "underline" ).style.backgroundColor = "#00cc55";
+	  document.getElementById( "underline" ).isToggled = false;
+	} else {
+	  document.getElementById( "underline" ).style.backgroundColor = "#008833";
+	  document.getElementById( "underline" ).isToggled = true;
+	}
+  }
+  
+
+  
+  function justifyLeft() {
+	document.execCommand( "justifyLeft" );
+	if ( document.getElementById( "align_left" ).isToggled ) {
+		document.getElementById( "align_left" ).style.backgroundColor = "#00cc55";
+		document.getElementById( "align_left" ).isToggled = false;
+	  } else {
+		document.getElementById( "align_left" ).style.backgroundColor = "#008833";
+		document.getElementById( "align_left" ).isToggled = true;
+	  }
+  }
+  
+  function justifyCenter() {
+	document.execCommand( "justifyCenter" );
+	if ( document.getElementById( "align_centre" ).isToggled ) {
+		document.getElementById( "align_centre" ).style.backgroundColor = "#00cc55";
+		document.getElementById( "align_centre" ).isToggled = false;
+	  } else {
+		document.getElementById( "align_centre" ).style.backgroundColor = "#008833";
+		document.getElementById( "align_centre" ).isToggled = true;
+	  }
+  }
+  
+  function justifyRight() {
+	document.execCommand( "justifyRight" );
+	if ( document.getElementById( "align_right" ).isToggled ) {
+		document.getElementById( "align_right" ).style.backgroundColor = "#00cc55";
+		document.getElementById( "align_right" ).isToggled = false;
+	  } else {
+		document.getElementById( "align_right" ).style.backgroundColor = "#008833";
+		document.getElementById( "align_right" ).isToggled = true;
+	  }
+  }
+  
+  function doSetTextColor() {
+	var text_color = prompt( "CSS Color:" );
+	if (text_color != "") {
+	  document.execCommand( "foreColor", false, text_color);
+	} else {
+	  alert( "You must set a Color!" );
+	}
+  }
